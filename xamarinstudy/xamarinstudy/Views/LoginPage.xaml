@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinstudy.Views.LoginPage"
+             Title="Login">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="10,20,10,5">
+            <Label 
+                Text="ProjectName"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center">
+            </Label>
+
+            <Image
+                
+                WidthRequest="200"
+                Source="car">
+            
+            </Image>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalTextAlignment="Center"
+                    Text="E-mail">
+                </Label>
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Keyboard="Email"
+                    Placeholder="Enter your email...">
+                </Entry>
+
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalTextAlignment="Center"
+                    Text="Password">
+                </Label>
+                <Entry
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    IsPassword="True"
+                    Placeholder="Enter your Password...">
+                </Entry>
+
+            </Grid>
+
+            <StackLayout
+                Orientation="Horizontal">
+                <Label
+                Text="Remember me in this device"
+                VerticalTextAlignment="Center"
+                >
+                </Label>
+
+                <Switch></Switch>
+            </StackLayout>
+
+            <ActivityIndicator></ActivityIndicator>
+
+            <Button
+                BackgroundColor="Navy"
+                TextColor="White"
+                Text="Login"
+                BorderRadius="23"
+                >
+                
+                
+                
+                
+            </Button>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
